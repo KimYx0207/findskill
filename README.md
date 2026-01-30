@@ -1,5 +1,7 @@
 # find-skills (Windows Compatible Fork)
 
+[中文文档](./README_CN.md)
+
 A Windows-compatible fork of [vercel-labs/skills find-skills](https://github.com/vercel-labs/skills) that fixes the empty output issue in Claude Code on Windows.
 
 ## The Problem
@@ -22,66 +24,65 @@ powershell -Command "npx skills find 'react'"
 
 ## Installation
 
-### Option 1: Replace your existing find-skills (Recommended)
+### Step 1: Install the original find-skills
 
-1. Locate your find-skills installation:
+```bash
+npx skills add vercel-labs/skills@find-skills -g -y
+```
+
+### Step 2: Replace with Windows version
+
+1. Open: https://github.com/KimYx0207/findskill/blob/main/windows/SKILL.md
+2. Copy all content
+3. Replace the file at:
    ```
    C:\Users\<YourUsername>\.agents\skills\find-skills\SKILL.md
    ```
 
-2. Replace the content with the Windows version from `windows/SKILL.md`
+### Step 3: Restart Claude Code
 
-3. Restart Claude Code
+Close and reopen Claude Code.
 
-### Option 2: Install as a new skill
+### Step 4: Verify
 
-```bash
-npx skills add KimYx0207/findskill@windows -g -y
-```
+Say to Claude Code: "find a skill for data analysis"
+
+If you see search results, installation is successful.
 
 ## Files
 
 ```
 findskill/
-├── README.md           # This file
-├── article.md          # 详细教程文章（中文）
+├── README.md           # English documentation (this file)
+├── README_CN.md        # Chinese documentation
+├── LICENSE             # MIT License
 ├── original/
 │   └── SKILL.md        # Original version from vercel-labs
 └── windows/
     └── SKILL.md        # Windows-compatible version
 ```
 
-## 详细教程
+## Key Changes
 
-查看 [article.md](./article.md) 获取完整的中文教程，包括：
-- find-skills 是什么
-- Windows 上的三个大坑及解决方案
-- 安装步骤（带验证）
-- 实战案例
-- 中英文关键词对照表
-- 常见问题 FAQ
-
-## Key Changes in Windows Version
-
-1. **Added Windows compatibility warning** at the top of the file
-2. **Changed all command examples** to use `powershell -Command "..."` format
+1. **Added Windows compatibility warning** at the top
+2. **Changed all commands** to use `powershell -Command "..."` format
 3. **Added Chinese to English keyword reference** (search only supports English)
 4. **Added troubleshooting section**
 
 ## Usage
 
-After installation, you can ask Claude Code:
+After installation, ask Claude Code:
 
-- "帮我搜索一个数据分析的skill" (Find a data analysis skill)
 - "find a skill for react"
 - "is there a skill for code review"
+- "search skill for data analysis"
 
 Claude Code will now correctly use PowerShell to run the search.
 
 ## Known Limitations
 
-1. **Search only supports English keywords** - Chinese queries need to be translated
-2. **Requires PowerShell** - Won't work in pure Git Bash environment
+1. **Search only supports English keywords** - Chinese queries need to be translated by AI
+2. **Trigger is semantic** - AI may or may not trigger find-skills depending on how you phrase it. Adding "skill" to your request makes it more reliable.
 3. **Windows only** - macOS/Linux users should use the original version
 
 ## Credits
