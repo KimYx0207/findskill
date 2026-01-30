@@ -44,11 +44,22 @@ npx skills add KimYx0207/findskill@windows -g -y
 ```
 findskill/
 ├── README.md           # This file
+├── article.md          # 详细教程文章（中文）
 ├── original/
 │   └── SKILL.md        # Original version from vercel-labs
 └── windows/
     └── SKILL.md        # Windows-compatible version
 ```
+
+## 详细教程
+
+查看 [article.md](./article.md) 获取完整的中文教程，包括：
+- find-skills 是什么
+- Windows 上的三个大坑及解决方案
+- 安装步骤（带验证）
+- 实战案例
+- 中英文关键词对照表
+- 常见问题 FAQ
 
 ## Key Changes in Windows Version
 
