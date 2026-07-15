@@ -4,6 +4,8 @@
 
 [English](./README.md)
 
+> 因合并关系，本仓库已迁入 [Kim Service](https://github.com/KimYx0207/Kim_Service) 合集，不再单独发布新版本。请前往 Kim Service 获取新版本、安装说明和更新记录。
+
 这是 [vercel-labs/skills find-skills](https://github.com/vercel-labs/skills) 的 Windows 兼容版本，修复了在 Windows 上 Claude Code 中搜索无输出的问题。
 
 ## 问题

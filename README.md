@@ -12,6 +12,8 @@
 
 </div>
 
+> This repository has been merged into [Kim Service](https://github.com/KimYx0207/Kim_Service) and no longer publishes standalone releases. Please use Kim Service for new versions, installation instructions, and release notes.
+
 > 🔗 **GitHub仓库**：[https://github.com/KimYx0207/findskill](https://github.com/KimYx0207/findskill)
 
 > 老金的开源知识库，实时更新群二维码：https://my.feishu.cn/wiki/OhQ8wqntFihcI1kWVDlcNdpznFf
