@@ -4,9 +4,9 @@
 
 <div align="center">
 
-![GitHub stars](https://img.shields.io/github/stars/KimYx0207/findskill?style=social)
-![GitHub forks](https://img.shields.io/github/forks/KimYx0207/findskill?style=social)
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
+[![GitHub stars](https://img.shields.io/github/stars/KimYx0207/findskill?style=social)](https://github.com/KimYx0207/findskill)
+[![GitHub forks](https://img.shields.io/github/forks/KimYx0207/findskill?style=social)](https://github.com/KimYx0207/findskill)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/KimYx0207/findskill)
 
 **Windows 兼容版 Claude Code 技能搜索工具**
 
